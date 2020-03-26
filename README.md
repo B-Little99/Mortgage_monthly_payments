@@ -1,0 +1,1 @@
+This programme will allow the user to calculate the monthly payments of a mortgage using the data they provide on the loan value, term and interest rate.

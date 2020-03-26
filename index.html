@@ -3,29 +3,33 @@
         <meta charset="utf-8">
         <title>Monthly Mortgage Repayment Calculator</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
      <h1>Monthly Mortgage Repayment Calculator</h1>
-     <p></p>
+     <p>This is a morgage calculator that works out the monthly payments you need to make. You can set the loan, term and interest rate to provide a high degree of flexibility.</p>
 
-     <div>
-        <div>
+    <div id = "firstWrapper">
+        <div class = "wrapper">
             <p>Morgage loan value</p>
-            <input id = "loan" type="number" required>
+            <input class = "data" id = "loan" type="number" required>
         </div>
             
-        <div>
-            <p>Morgage term</p>
-            <input id = "term" type="number" required>
+        <div class = "wrapper">
+            <p>Morgage term (years)</p>
+            <input class = "data" id = "term" type="number" required>
+        </div>
+
+        <div class = "wrapper">
+            <p>Interest rate per year (%)</p>
+            <input class = "data" id = "interest" type="number" required>
         </div>
     </div>
 
-     <div>
-        <p>Interest rate per year</p>
-        <input id = "interest" type="number" required>
-     </div>
-
-     <button id = "submit" onclick = "calculation()">Submit</button>
+    <div id = "buttonWrapper">
+        <button class = "button" id = "submit" onclick = "calculation()">Submit</button>
+        <button class = "button" type = "reset" onclick="reset()"> Reset </button>
+    </div>
 
      <p id = "output"></p>
 
